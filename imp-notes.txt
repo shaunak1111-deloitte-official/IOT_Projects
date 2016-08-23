@@ -1,0 +1,10 @@
+changes in scripts in package.json
+
+  "scripts": {
+    "start": "sails lift",
+    "debug": "node debug app.js"
+  }
+
+// changes done
+"debug": "node debug app.js",
+"start": "node app.js"
