@@ -22,11 +22,12 @@
     "include-all": "~0.1.6",
     "rc": "1.0.1",
     "sails": "~0.12.4",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "skipper": "^0.6.4"
   },
   "scripts": {
-    "start": "sails lift",
-    "debug": "node debug app.js"
+    "debug": "node debug app.js",
+    "start": "sails lift"
   },
   "main": "app.js",
   "repository": {
