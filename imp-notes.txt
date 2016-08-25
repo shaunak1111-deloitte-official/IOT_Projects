@@ -9,3 +9,10 @@ changes in scripts in package.json
 
 "debug": "node debug app.js",
 "start": "node app.js"
+
+
+// sails commands 
+sails generate api apiName
+sails generate controller controllerName
+sails generate model modelName
+

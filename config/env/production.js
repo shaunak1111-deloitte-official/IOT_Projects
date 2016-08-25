@@ -35,4 +35,6 @@ module.exports = {
   //   level: "silent"
   // }
 
+  MONGOLAB_URI : "mongodb://heroku_lvqnxrqr:b74aov1vs6qdsgtm1lt7r8rpg3@ds013956.mlab.com:13956/heroku_lvqnxrqr"
+
 };

@@ -1,5 +1,12 @@
 module.exports = {
   showHomePage: function (req, res) {
-	return res.json({home:'this is home page'});
+  	HomeAPI.find().exec(function(err,data){
+  		if(err) {
+  			return res.serverError();
+  		}
+  		return res.json(data);
+  	})
+
+	
   }
 };
