@@ -4,7 +4,7 @@ module.exports = {
   		if(err) {
   			return res.serverError();
   		}
-  		return res.json(data);
+  		return res.json('transurban members', data);
   	})
 
 	
