@@ -4,9 +4,9 @@ module.exports = {
   		if(err) {
   			return res.serverError();
   		}
-  		return res.json('transurban members', data);
-  	})
-
-	
+  		data[0].projectName = 'Transurban';
+  		console.log(data,typeof data);
+  		return res.json(data);
+  	});
   }
 };
