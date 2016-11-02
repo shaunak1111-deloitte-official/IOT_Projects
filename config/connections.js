@@ -58,13 +58,13 @@ module.exports.connections = {
   ***************************************************************************/
   someMongodbServer: {
     adapter: 'sails-mongo',
-    host: 'localhost',
-    port: 27017,
+    // host: 'localhost',
+    // port: 27017,
     //user: 'username', //optional
     // password: 'password', //optional
     database: 'Transurban' //optional
-    //url: 'mongodb://heroku_lvqnxrqr:b74aov1vs6qdsgtm1lt7r8rpg3@ds013956.mlab.com:13956/heroku_lvqnxrqr'
-    //process.env.MONGOLAB_URI
+    url: 'mongodb://heroku_lvqnxrqr:b74aov1vs6qdsgtm1lt7r8rpg3@ds013956.mlab.com:13956/heroku_lvqnxrqr'
+    process.env.MONGOLAB_URI
   },
 
   /***************************************************************************
