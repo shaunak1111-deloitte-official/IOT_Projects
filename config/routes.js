@@ -45,5 +45,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'get /home': 'HomeController.showHomePage'
+  'get /home': 'HomeController.showHomePage',
+  'post /login': 'LoginController.generateJWTTokens',
+  'post /authenticate' : 'LoginController.authenticate'
 };

@@ -16,7 +16,6 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.policies.html
  */
 
-
 module.exports.policies = {
 
   /***************************************************************************
@@ -27,6 +26,19 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
+
+  // make the default to acess unspecigic logic in controller policy false 
+  //'*': false,
+
+  // '*': function(req,res,next){
+  //   console.log(435);
+  //   next();
+  // },
+
+  // '/home': function(req,res,next){
+  //   console.log(123);
+  //   next();
+  // }
 
   /***************************************************************************
   *                                                                          *
@@ -48,4 +60,7 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+
+  // LoginController: {
+  // }
 };
